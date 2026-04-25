@@ -18,7 +18,6 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <SessionProvider>
           <ThemeProvider
             attribute="class"
             defaultTheme="light"
@@ -28,7 +27,6 @@ export default function RootLayout({
             {children}
             <Toaster />
           </ThemeProvider>
-        </SessionProvider>
       </body>
     </html>
   );
