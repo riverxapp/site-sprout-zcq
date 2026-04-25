@@ -1,4 +1,3 @@
-import { getServerSession } from "@/lib/auth";
 import { redirect } from "next/navigation";
 import { Navbar } from "@/components/Navbar";
 import { HeroSection } from "@/components/HeroSection";
