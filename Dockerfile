@@ -8,8 +8,8 @@ RUN apt-get update \
 
 RUN corepack enable && corepack prepare pnpm@10.26.2 --activate
 
-COPY package.json pnpm-lock.yaml ./
-RUN rm -rf node_modules && pnpm install --prefer-offline --frozen-lockfile
+COPY package.json ./
+RUN rm -rf node_modules && pnpm install --prefer-offline --no-frozen-lockfile
 
 COPY . .
 
